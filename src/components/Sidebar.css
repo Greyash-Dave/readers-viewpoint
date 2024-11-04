@@ -1,0 +1,38 @@
+/* Sidebar.css */
+.sidebar {
+    overflow: auto;
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease-in-out;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    height: 100%;
+    width: 25rem;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    transform: translate(0%, 0);
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .sidebar li:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .sidebar h2 {
+    margin: 0;
+    padding: 10px;
+  }
+  

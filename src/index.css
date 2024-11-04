@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: black; /* Track color */
+    /* border: transparent; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+}

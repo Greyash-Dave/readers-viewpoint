@@ -1,0 +1,129 @@
+/* Controls.css */
+
+.controls {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .controls.open {
+    transform: translate(0%, 0);
+  }
+
+  .controls img {
+    top: 1rem;
+    left: -3rem;
+    position: absolute;
+    width: 2rem;
+    background-color: rgba(255, 255, 255, 0.737);
+    border-radius: 2rem;
+    padding: 5px;
+    z-index: 1001;
+    filter: invert(1);
+
+  }
+
+  .controls.open img {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .general-controls,
+  .style-controls,
+  .navigation-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .general-controls {
+    background-color: #000000;
+    border: 1px solid #444;
+  }
+  
+  .style-controls {
+    background-color: #000000;
+    border: 1px solid #555;
+}
+  
+  .general-controls button,
+  .style-controls button,
+  .navigation-controls button,
+  .youtube-controls button,
+  .bg-image-controls button {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .youtube-controls button,
+  .bg-image-controls button{
+    margin-left: 1rem;
+  }
+  
+  .general-controls button:hover,
+  .style-controls button:hover,
+  .navigation-controls button:hover, 
+  .youtube-controls button:hover,
+  .bg-image-controls button:hover {
+    background-color: #1e1e1e;
+  }
+
+  .general-controls:hover,
+  .style-controls:hover,
+  .navigation-controls:hover {
+    box-shadow: 0 0 1px 1px white; /* Adjust values as needed */
+  }
+
+
+  
+  .general-controls input[type="file"],
+  .style-controls input[type="number"],
+  .style-controls input[type="color"],
+  .youtube-controls input[type="text"],
+  .bg-image-controls  input[type="file"]{
+    background-color: #2b2b2b;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 1rem;
+  }
+  
+  .navigation-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    border: 1px solid #555;
+    padding: 10px;
+  }
+  
+  .navigation-controls button {
+    padding: 8px 16px;
+    width: 100%;
+  }
+  
+  .navigation-controls span {
+    font-size: 14px;
+    color: #ddd;
+  }
+  
