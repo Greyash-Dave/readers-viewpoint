@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import Controls from './Controls';
 import Reader from './Reader';
-import './EPUBReader.css';  // Import the CSS file
+import './EpubReader.css';  // Import the CSS file
 
 const EPUBReader = () => {
   return (
