@@ -24,3 +24,8 @@
     flex-direction: column;
     overflow: hidden;
   }
+
+  @media (max-width: 600px) {
+    .epub-reader { flex-direction: column; height: 100vh; width: 100vw; padding: 0; flex: 1; }
+    .main-content { padding: 0; width: 100vw; flex: 1; }
+  }

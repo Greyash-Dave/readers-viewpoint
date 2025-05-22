@@ -32,7 +32,6 @@
     padding: 5px;
     z-index: 1001;
     filter: invert(1);
-
   }
 
   .controls.open img {
@@ -58,7 +57,7 @@
   .style-controls {
     background-color: #000000;
     border: 1px solid #555;
-}
+  }
   
   .general-controls button,
   .style-controls button,
@@ -75,7 +74,7 @@
   }
 
   .youtube-controls button,
-  .bg-image-controls button{
+  .bg-image-controls button {
     margin-left: 1rem;
   }
   
@@ -92,14 +91,12 @@
   .navigation-controls:hover {
     box-shadow: 0 0 1px 1px white; /* Adjust values as needed */
   }
-
-
   
   .general-controls input[type="file"],
   .style-controls input[type="number"],
   .style-controls input[type="color"],
   .youtube-controls input[type="text"],
-  .bg-image-controls  input[type="file"]{
+  .bg-image-controls  input[type="file"] {
     background-color: #2b2b2b;
     color: #fff;
     border: 1px solid #444;
@@ -125,5 +122,72 @@
   .navigation-controls span {
     font-size: 14px;
     color: #ddd;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      overflow-x: hidden;
+    }
+    .controls {
+      transition: z-index 0.3s, box-shadow 0.3s, transform 0.3s;
+      z-index: 1000;
+      box-shadow: none;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+      padding: 20px;
+      gap: 10px;
+      font-size: 14px;
+      flex: 1;
+      transform: translate(0, 100%);
+      opacity: 10;
+    }
+    .controls.open {
+      z-index: 1001;
+      box-shadow: 0 0 20px 4px rgba(0,0,0,0.5);
+      transform: translate(0, 10%);
+    }
+    .controls h1 {
+      font-size: 1.5rem;
+    }
+    .controls img {
+      width: 1.5rem;
+      top: 0rem;
+      left: 0rem;
+      /* right: 0.5rem; */
+      /* left: auto; */
+      padding: 2px;
+      position: absolute;
+      transform: translate(47vw, -200%);
+    }
+
+    .controls.open img{
+      transform: translate(85vw, 0%);
+    }
+    .general-controls,
+    .style-controls,
+    .navigation-controls {
+      padding: 8px;
+      gap: 5px;
+    }
+    .general-controls button,
+    .style-controls button,
+    .navigation-controls button,
+    .youtube-controls button,
+    .bg-image-controls button {
+      padding: 6px;
+      font-size: 12px;
+    }
+    .general-controls input[type="file"],
+    .style-controls input[type="number"],
+    .style-controls input[type="color"],
+    .youtube-controls input[type="text"],
+    .bg-image-controls  input[type="file"] {
+      padding: 4px;
+      font-size: 12px;
+      margin-left: 0.5rem;
+    }
   }
   
