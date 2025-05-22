@@ -160,7 +160,8 @@
       /* left: auto; */
       padding: 2px;
       position: absolute;
-      transform: translate(47vw, -200%);
+      /* transform: translate(47vw, -200%); */
+      transform: translate(48vw, -20vh);
     }
 
     .controls.open img{
